@@ -1,9 +1,9 @@
 index:
     path: /
-    controller: App\Controller\Home:index
+    controller: App\Controller\Home::index
 list:
     path: /list
-    controller: App\Controller\Home:list
+    controller: App\Controller\Home::list
 about:
     path: /about
-    controller: App\Controller\Home:about
+    controller: App\Controller\Home::about

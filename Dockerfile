@@ -17,4 +17,6 @@ RUN wget https://get.symfony.com/cli/installer -O - | bash \
 
 COPY . /var/www
 
+RUN composer dump-env prod
+
 CMD [ "symfony", "server:start"]
