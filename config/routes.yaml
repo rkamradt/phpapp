@@ -7,3 +7,6 @@ list:
 about:
     path: /about
     controller: App\Controller\Home::about
+add:
+    path: /add
+    controller: App\Controller\Home::add
