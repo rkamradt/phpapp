@@ -12,6 +12,8 @@ RUN  apt-get update \
   && apt-get install -y wget unzip git \
   && rm -rf /var/lib/apt/lists/*
 
+RUN docker-php-ext-install pdo pdo_mysql mysqli
+
 RUN wget https://get.symfony.com/cli/installer -O - | bash \
   && mv /root/.symfony/bin/symfony /bin/symfony
 
